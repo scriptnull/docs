@@ -127,6 +127,28 @@ shipctl copy_file_to_resource_state <filename> <resource name>
 shipctl copy_file_to_resource_state "vpc.conf" "vpc_settings"
 ```
 
+### refresh_file_to_out_path
+
+**Description**
+
+Alias for `copy_file_to_resource_state` command.
+
+**Usage**
+
+```
+shipctl refresh_file_to_out_path <filename> <resource name>
+```
+
+- `filename` is the name of the file you want to copy to the state folder of the `OUT` resource
+- `resource name` is the friendly name of the `OUT` resource
+
+
+**Example**
+
+```
+shipctl refresh_file_to_out_path "vpc.conf" "vpc_settings"
+```
+
 ### post_resource_state
 
 **Description**
