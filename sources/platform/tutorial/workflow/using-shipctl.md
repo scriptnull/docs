@@ -61,6 +61,28 @@ shipctl copy_file_from_resource_state <resource name> <filename> <topath>
 shipctl copy_file_from_resource_state "vpc_settings" "vpc.conf" .`
 ```
 
+### copy_resource_file_from_state
+
+**Description**
+
+Alias for `copy_file_from_resource_state` command.
+
+**Usage**
+
+```
+shipctl copy_resource_file_from_state <resource name> <filename> <topath>
+```
+
+- `resource name` is the friendly name of the `IN` resource
+- `filename` is the name of the file you want to copy from the `IN` resource
+- `topath` specifies where the file should be copied
+
+**Example**
+
+```
+shipctl copy_resource_file_from_state "vpc_settings" "vpc.conf" .`
+```
+
 ### copy_file_to_state
 
 **Description**
