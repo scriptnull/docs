@@ -309,6 +309,24 @@ shipctl get_resource_operation <resource name>
 MY_RES_OPER="$(shipctl get_resource_operation "vpc_settings")"
 ```
 
+### get_resource_path
+
+**Description**
+
+Alias for `get_resource_state` command.
+
+**Usage**
+
+```
+shipctl get_resource_path <resource name>
+```
+
+**Example**
+
+```
+MY_RES_PATH="$(shipctl get_resource_path "vpc_settings")"
+```
+
 ### get_resource_state
 
 **Description**
